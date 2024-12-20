@@ -43,6 +43,11 @@ To do that we first need to extract the ML code into file which is a pickle file
 I have created a web page API in localhost using Streamlit library 
 Streamlit Documentation Link:https://docs.streamlit.io/
 
+In the file app_mrs.py there is code which requires some editing.Below given is the code
+response = requests.get('https://api.themoviedb.org/3/movie/{}?api_key=yourkeygenerated'.format(movie_id))
 
+To generate your private API Key you need to create an account in TMDB and go to Settings > API > Generate Key
+Once you fill all the credentials your key will be generated and paste that key api_key=here.
+This is done to get the posters of the movies so that it will be shown while recommending the movies along with title.
 
-
+Hope this helps.
